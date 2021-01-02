@@ -1,4 +1,5 @@
 @import"vars.scss";
+@import"nav.scss";
 
 body{   
   .wrap{ 
@@ -16,191 +17,6 @@ body{
         box-sizing: border-box;
       }
       &__box{
-        &__nav{
-          position: absolute;
-          right: 5%;
-          top: 0;
-          z-index: 10;
-          nav{
-            position: relative;
-            text-shadow: 0 0 0.2em rgba(128,0,128,1);
-            display: flex;
-            justify-content: space-between;
-            width: 30vw;
-            margin: 80px auto 0;
-            z-index: 10;
-            p{
-              font-family: "RoGaramond";
-              a{
-                display: block;
-                text-decoration: none;
-                color: #fff;
-                font-size: 20px;
-                font-weight: lighter;
-              }
-              .home:before{
-                position: absolute;
-                top: 12px;
-                left: 6%;
-                width: 50px;
-                height: 50px;
-                border: 4px solid $hoverColor;
-                transform: translateX(-50%) translateY(-50%) scale(0.8);
-                border-radius: 50%;
-                background: transparent;
-                content: "";
-                opacity: 0;
-                transition: all 0.3s;
-                z-index: 9;
-              }
-              .home:after{
-                position: absolute;
-                top: 12px;
-                left: 6%;
-                width: 50px;
-                height: 50px;
-                border: 4px solid $hoverColor;
-                transform: translateX(-50%) translateY(-50%) scale(0.8);
-                border-radius: 50%;
-                background: transparent;
-                content: "";
-                opacity: 0;
-                transition: all 0.3s;
-                z-index: 9;
-                border-width: 2px;
-                transition: all 0.4s;
-              }
-              .home:hover:before{
-                opacity: 0.5;
-                transform: translateX(-50%) translateY(-50%) scale(1);
-              }
-              .home:hover:after{
-                opacity: 0.5;
-                transform: translateX(-50%) translateY(-50%) scale(1.3);
-              }
-              .skill:before{
-                position: absolute;
-                top: 12px;
-                left: 33.5%;
-                width: 50px;
-                height: 50px;
-                border: 4px solid $hoverColor;
-                transform: translateX(-50%) translateY(-50%) scale(0.8);
-                border-radius: 50%;
-                background: transparent;
-                content: "";
-                opacity: 0;
-                transition: all 0.3s;
-                z-index: 9;
-              }
-              .skill:after{
-                position: absolute;
-                top: 12px;
-                left: 33.5%;
-                width: 50px;
-                height: 50px;
-                border: 4px solid $hoverColor;
-                transform: translateX(-50%) translateY(-50%) scale(0.8);
-                border-radius: 50%;
-                background: transparent;
-                content: "";
-                opacity: 0;
-                transition: all 0.3s;
-                z-index: 9;
-                border-width: 2px;
-                transition: all 0.4s;
-              }
-              .skill:hover:before{
-                opacity: 0.5;
-                transform: translateX(-50%) translateY(-50%) scale(1);
-              }
-              .skill:hover:after{
-                opacity: 0.5;
-                transform: translateX(-50%) translateY(-50%) scale(1.3);
-              }
-              .works:before{
-                position: absolute;
-                top: 12px;
-                left: 61%;
-                width: 50px;
-                height: 50px;
-                border: 4px solid $hoverColor;
-                transform: translateX(-50%) translateY(-50%) scale(0.8);
-                border-radius: 50%;
-                background: transparent;
-                content: "";
-                opacity: 0;
-                transition: all 0.3s;
-                z-index: 9;
-              }
-              .works:after{
-                position: absolute;
-                top: 12px;
-                left: 61%;
-                width: 50px;
-                height: 50px;
-                border: 4px solid $hoverColor;
-                transform: translateX(-50%) translateY(-50%) scale(0.8);
-                border-radius: 50%;
-                background: transparent;
-                content: "";
-                opacity: 0;
-                transition: all 0.3s;
-                z-index: 9;
-                border-width: 2px;
-                transition: all 0.4s;
-              }
-              .works:hover:before{
-                opacity: 0.5;
-                transform: translateX(-50%) translateY(-50%) scale(1);
-              }
-              .works:hover:after{
-                opacity: 0.5;
-                transform: translateX(-50%) translateY(-50%) scale(1.3);
-              }
-              .content:before{
-                position: absolute;
-                top: 12px;
-                left: 92%;
-                width: 50px;
-                height: 50px;
-                border: 4px solid $hoverColor;
-                transform: translateX(-50%) translateY(-50%) scale(0.8);
-                border-radius: 50%;
-                background: transparent;
-                content: "";
-                opacity: 0;
-                transition: all 0.3s;
-                z-index: 9;
-              }
-              .content:after{
-                position: absolute;
-                top: 12px;
-                left: 92%;
-                width: 50px;
-                height: 50px;
-                border: 4px solid $hoverColor;
-                transform: translateX(-50%) translateY(-50%) scale(0.8);
-                border-radius: 50%;
-                background: transparent;
-                content: "";
-                opacity: 0;
-                transition: all 0.3s;
-                z-index: 9;
-                border-width: 2px;
-                transition: all 0.4s;
-              }
-              .content:hover:before{
-                opacity: 0.5;
-                transform: translateX(-50%) translateY(-50%) scale(1);
-              }
-              .content:hover:after{
-                opacity: 0.5;
-                transform: translateX(-50%) translateY(-50%) scale(1.3);
-              }
-            }
-          }
-        }
         &__title{
           position: absolute;
           left: 0;
@@ -218,6 +34,45 @@ body{
             text-shadow: 0 0 0.2em rgba(128,0,128,1);
             font-weight: lighter;
             text-align: center;
+            span{
+              animation: blink .6s infinite alternate;
+            }
+            @keyframes blink{
+              60%{
+                text-shadow: 
+                  0 0 2px rgba(255, 255, 255, .1), 
+                  0 0 10px rgba(255, 255, 255, .4);
+              }
+              70%{
+                text-shadow: 
+                  0 0 2px rgba(255,255,255,1), 
+                  0 0 10px rgba(255,255,255,1), 
+                  0 0 20px rgba(255,255,255,1), 
+                  0 0 30px rgba(255,255,255,1), 
+                  0 0 40px #ff00de, 
+                  0 0 70px #ff00de, 
+                  0 0 80px #ff00de,
+                  0 0 100px #ff00de;
+              }
+              80%{
+                text-shadow: 
+                  0 0 2px rgba(255, 255, 255, .1), 
+                  0 0 10px rgba(255, 255, 255, .4);             
+                text-stroke: 2px rgba(255,255,255,0.05);
+              }
+              100% { 
+                text-shadow: 
+                  0 0 2px rgba(255,255,255,1), 
+                  0 0 10px rgba(255,255,255,1), 
+                  0 0 20px rgba(255,255,255,1), 
+                  0 0 30px rgba(255,255,255,1), 
+                  0 0 40px #ff00de, 
+                  0 0 70px #ff00de, 
+                  0 0 80px #ff00de,
+                  0 0 100px #ff00de;
+              }
+              
+            }
           }
           h2{
             text-shadow: 0 0 0.2em rgba(128,0,128,1);
@@ -226,17 +81,166 @@ body{
         }
       }
     }
+    &__profile{
+      position: relative;
+      &__bg{
+        position: relative;
+        min-height: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 10;
+        padding: 30%;
+        box-sizing: border-box;
+      }
+      &__box{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 600px;
+        margin: 88px auto 0;
+        color: #fff;
+        font-family: "A P-OTF A1ゴシック StdN";
+        // background: #242424;
+        &__text{
+          height: 100%;
+          margin: 160px 96px 0 0;
+          line-height: 1;
+          h2{
+            margin: 32px 0 24px;
+            font-size: 24px;
+          }
+          p{
+            margin: 8px 0 0;
+            font-size: 16px;
+          }
+          h3{
+            margin: 16px 0 0;
+            font-size: 18px;
+          }
+          &__name{
+            height: 120px;
+            border-bottom: 1px #707070 solid;
+            h2{
+              font-size: 30px;
+            }
+          }
+          &__hobby{
+            height: 160px;
+            border-bottom: 1px #707070 solid;
+          }
+          &__content{
+            height: 60px;
+            border-bottom: 1px #707070 solid;
+            p{
+              margin: 32px 0 0;
+            }
+          }
+        }
+      }
+    }
+    &__slide{
+      position: relative;
+      font-family: "A P-OTF A1ゴシック StdN";
+      &__bg{
+        position: relative;
+        min-height: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 10;
+        padding: 30%;
+        box-sizing: border-box;
+      }
+      .wrap_slide__life{
+        position: absolute;
+        left: 130px;
+        top: 130px;
+        z-index: 11;
+        color: #fff;
+        font-size: 30px;
+      }
+      .swiper{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 50px;
+        z-index: 11;
+        width: 80vw;
+        margin: 0 auto;
+        .swiper-container{
+          margin: 200px 0 0;
+          // width: 80vw;
+          // margin: 0 auto;
+          .swiper-wrapper{
+            height: 500px;
+            .swiper-slide{
+              .swiper__box{
+                font-family: "A P-OTF A1ゴシック StdN";
+                position: relative;
+                width: 100%;
+                margin: 0 auto;
+                color: #fff;
+                &__year{
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  font-size: 40px;
+                }
+                &__flex{
+                  font-size: 30px;
+                  display: flex;
+                  justify-content: space-around;
+                  align-items: center;
+                  &__content{
+
+                  }
+                  &__img{
+                    margin: 50px 0 0;
+                  }
+                }
+
+              }
+            }
+          }
+        }
+      }
+    }
+    &__work{
+      position: relative;
+      &__bg{
+        position: relative;
+        min-height: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 10;
+        padding: 30%;
+        box-sizing: border-box;
+      }
+    }
+    
   }
   .cd-bg-1  {
     background-image: url('../img/back-img.svg');
   }
   .cd-bg-2  {
-    background-image: url('../img/back-img2.svg');
+    background-image: url('../img/stone-img.jpg');
   }
   .cd-bg-3  {
-    background-image: url('../img/back-img3.svg');
+    background-image: url('../img/back-img.svg');
   }
   .cd-bg-4  {
-    background-image: url('../img/back-img4.svg');
+    background-image: url('../img/stone-img.jpg');
   }
 }

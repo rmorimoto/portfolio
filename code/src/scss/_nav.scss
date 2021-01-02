@@ -1,0 +1,185 @@
+.wrap__fv__box__nav{
+    position: absolute;
+    right: 5%;
+    top: 0;
+    z-index: 10;
+    nav{
+      position: relative;
+      text-shadow: 0 0 0.2em rgba(128,0,128,1);
+      display: flex;
+      justify-content: space-between;
+      width: 30vw;
+      margin: 80px auto 0;
+      z-index: 10;
+      p{
+        font-family: "RoGaramond";
+        a{
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+        .home:before{
+          position: absolute;
+          top: 12px;
+          left: 6%;
+          width: 50px;
+          height: 50px;
+          border: 4px solid $hoverColor;
+          transform: translateX(-50%) translateY(-50%) scale(0.8);
+          border-radius: 50%;
+          background: transparent;
+          content: "";
+          opacity: 0;
+          transition: all 0.3s;
+          z-index: 9;
+        }
+        .home:after{
+          position: absolute;
+          top: 12px;
+          left: 6%;
+          width: 50px;
+          height: 50px;
+          border: 4px solid $hoverColor;
+          transform: translateX(-50%) translateY(-50%) scale(0.8);
+          border-radius: 50%;
+          background: transparent;
+          content: "";
+          opacity: 0;
+          transition: all 0.3s;
+          z-index: 9;
+          border-width: 2px;
+          transition: all 0.4s;
+        }
+        .home:hover:before{
+          opacity: 0.5;
+          transform: translateX(-50%) translateY(-50%) scale(1);
+        }
+        .home:hover:after{
+          opacity: 0.5;
+          transform: translateX(-50%) translateY(-50%) scale(1.3);
+        }
+        .skill:before{
+          position: absolute;
+          top: 12px;
+          left: 33.5%;
+          width: 50px;
+          height: 50px;
+          border: 4px solid $hoverColor;
+          transform: translateX(-50%) translateY(-50%) scale(0.8);
+          border-radius: 50%;
+          background: transparent;
+          content: "";
+          opacity: 0;
+          transition: all 0.3s;
+          z-index: 9;
+        }
+        .skill:after{
+          position: absolute;
+          top: 12px;
+          left: 33.5%;
+          width: 50px;
+          height: 50px;
+          border: 4px solid $hoverColor;
+          transform: translateX(-50%) translateY(-50%) scale(0.8);
+          border-radius: 50%;
+          background: transparent;
+          content: "";
+          opacity: 0;
+          transition: all 0.3s;
+          z-index: 9;
+          border-width: 2px;
+          transition: all 0.4s;
+        }
+        .skill:hover:before{
+          opacity: 0.5;
+          transform: translateX(-50%) translateY(-50%) scale(1);
+        }
+        .skill:hover:after{
+          opacity: 0.5;
+          transform: translateX(-50%) translateY(-50%) scale(1.3);
+        }
+        .works:before{
+          position: absolute;
+          top: 12px;
+          left: 61%;
+          width: 50px;
+          height: 50px;
+          border: 4px solid $hoverColor;
+          transform: translateX(-50%) translateY(-50%) scale(0.8);
+          border-radius: 50%;
+          background: transparent;
+          content: "";
+          opacity: 0;
+          transition: all 0.3s;
+          z-index: 9;
+        }
+        .works:after{
+          position: absolute;
+          top: 12px;
+          left: 61%;
+          width: 50px;
+          height: 50px;
+          border: 4px solid $hoverColor;
+          transform: translateX(-50%) translateY(-50%) scale(0.8);
+          border-radius: 50%;
+          background: transparent;
+          content: "";
+          opacity: 0;
+          transition: all 0.3s;
+          z-index: 9;
+          border-width: 2px;
+          transition: all 0.4s;
+        }
+        .works:hover:before{
+          opacity: 0.5;
+          transform: translateX(-50%) translateY(-50%) scale(1);
+        }
+        .works:hover:after{
+          opacity: 0.5;
+          transform: translateX(-50%) translateY(-50%) scale(1.3);
+        }
+        .content:before{
+          position: absolute;
+          top: 12px;
+          left: 92%;
+          width: 50px;
+          height: 50px;
+          border: 4px solid $hoverColor;
+          transform: translateX(-50%) translateY(-50%) scale(0.8);
+          border-radius: 50%;
+          background: transparent;
+          content: "";
+          opacity: 0;
+          transition: all 0.3s;
+          z-index: 9;
+        }
+        .content:after{
+          position: absolute;
+          top: 12px;
+          left: 92%;
+          width: 50px;
+          height: 50px;
+          border: 4px solid $hoverColor;
+          transform: translateX(-50%) translateY(-50%) scale(0.8);
+          border-radius: 50%;
+          background: transparent;
+          content: "";
+          opacity: 0;
+          transition: all 0.3s;
+          z-index: 9;
+          border-width: 2px;
+          transition: all 0.4s;
+        }
+        .content:hover:before{
+          opacity: 0.5;
+          transform: translateX(-50%) translateY(-50%) scale(1);
+        }
+        .content:hover:after{
+          opacity: 0.5;
+          transform: translateX(-50%) translateY(-50%) scale(1.3);
+        }
+      }
+    }
+  }
