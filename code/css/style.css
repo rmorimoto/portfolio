@@ -221,10 +221,10 @@ body .wrap__fv__bg {
 }
 
 body .wrap__fv__box__title {
+  transition: 1s ease;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
+  right: 0px;
+  top: 350px;
   bottom: 0;
   z-index: 10;
   width: 1000px;
@@ -235,7 +235,7 @@ body .wrap__fv__box__title {
 
 body .wrap__fv__box__title h1 {
   font-family: "RoGaramond";
-  font-size: 6vw;
+  font-size: 4vw;
   text-shadow: 0 0 0.2em purple;
   font-weight: lighter;
   text-align: center;
@@ -339,6 +339,9 @@ body .wrap__profile__box__text h3 {
 body .wrap__profile__box__text__name {
   height: 120px;
   border-bottom: 1px #707070 solid;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all ease 1s;
 }
 
 body .wrap__profile__box__text__name h2 {
@@ -348,11 +351,19 @@ body .wrap__profile__box__text__name h2 {
 body .wrap__profile__box__text__hobby {
   height: 160px;
   border-bottom: 1px #707070 solid;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all ease 1s;
+  transition-delay: 0.3s;
 }
 
 body .wrap__profile__box__text__content {
   height: 60px;
   border-bottom: 1px #707070 solid;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all ease 1s;
+  transition-delay: 0.5s;
 }
 
 body .wrap__profile__box__text__content p {
@@ -383,6 +394,10 @@ body .wrap__slide .wrap_slide__life {
   z-index: 11;
   color: #fff;
   font-size: 30px;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all ease 1s;
+  transition-delay: 0.4s;
 }
 
 body .wrap__slide .swiper {
@@ -394,6 +409,10 @@ body .wrap__slide .swiper {
   z-index: 11;
   width: 80vw;
   margin: 0 auto;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all ease 1s;
+  transition-delay: 0.4s;
 }
 
 body .wrap__slide .swiper .swiper-container {
@@ -442,22 +461,88 @@ body .wrap__work__bg {
   background-repeat: no-repeat;
   background-position: center center;
   z-index: 10;
-  padding: 30%;
+  padding: 40%;
   box-sizing: border-box;
 }
 
+body .wrap__work__box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 80px;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1100px;
+}
+
+body .wrap__work__box__content__work {
+  color: #fff;
+  font-family: "RoGaramond";
+  font-size: 30px;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all ease 1s;
+  transition-delay: 0.4s;
+}
+
+body .wrap__work__box__content__year {
+  color: #fff;
+  font-family: "A P-OTF A1ゴシック StdN";
+  font-size: 30px;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all ease 1s;
+  transition-delay: 0.5s;
+}
+
+body .wrap__work__box__content__items {
+  color: #fff;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all ease 1s;
+  transition-delay: 0.8s;
+}
+
+body .wrap__work__box__content__items p {
+  margin: 8px 0 0;
+}
+
+body .wrap__work__box__content__items p a img {
+  transition: ease-in-out 0.3s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .wrap__work__box__content__items p a img:hover {
+  opacity: 0.7;
+}
+
+body .wrap__work__box__content__items__time {
+  display: flex;
+}
+
+body .wrap__work__box__content__items__technique {
+  display: flex;
+  align-items: center;
+}
+
 body .cd-bg-1 {
-  background-image: url("../img/back-img.svg");
+  background-image: url("../img/back-img-title.png");
 }
 
 body .cd-bg-2 {
-  background-image: url("../img/stone-img.jpg");
+  background-image: url("../img/stone-img.png");
 }
 
 body .cd-bg-3 {
-  background-image: url("../img/back-img.svg");
+  background-image: url("../img/back-black.png");
 }
 
 body .cd-bg-4 {
-  background-image: url("../img/stone-img.jpg");
+  background-image: url("../img/stone-img.png");
 }
